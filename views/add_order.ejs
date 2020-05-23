@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title><%- pageTitle %></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<form method="POST" action="/postProcessedOrder">
+    <h1>Add order details to wsdl </h1>
+    <input name="name" placeholder="name" type="text" />
+    <input name="description" placeholder="description" type="text" />
+    <input name="price" placeholder="price" type="number" />
+    <input type="submit" value="Trimite" />
+</form>
+
+<form method="POST" action="/postRequestInvoice">
+    <h1>Get invoice by ID</h1>
+    <input name="id" placeholder="id" type="number" />
+    <input type="submit" value="Trimite" />
+</form>
+
+<form method="POST" action="/postDeleteOrder">
+    <h1>Delete Order By ID</h1>
+    <input name="id" placeholder="id" type="number" />
+    <input type="submit" value="Sterge" />
+</form>
+
+<form method="POST" action="/getAllOrders">
+    <h1>Get all Orders</h1>
+    <input type="submit" value="Get All Orders"/>
+</form>
+
+<div class="orders_table">
+
+</div>
+
+<script>
+
+</script>
+
+</html>
